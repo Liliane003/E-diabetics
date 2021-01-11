@@ -1,0 +1,42 @@
+{
+  "name": "e-diabetics",
+  "version": "1.0.0",
+  "description": "this is a backend part of e-diabetics this  web based app will help diabetic patients to find health food that will help them to reduce their blood sugar and be able to chat with their doctors",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+    "devStart": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liliane003/E-diabetics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liliane003/E-diabetics/issues"
+  },
+  "homepage": "https://github.com/Liliane003/E-diabetics#readme"
+}
